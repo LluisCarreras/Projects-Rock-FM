@@ -36,8 +36,8 @@ jobs:
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
-        git add updated_file.csv
-        git commit -m "Update CSV file via GitHub Action"
+        git add songs.csv
+        git commit -m "Update songs CSV file via GitHub Action"
         git push
 
 
