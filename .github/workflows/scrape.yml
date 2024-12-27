@@ -1,4 +1,4 @@
-name: Automate Data Scraping
+name: Automate Data Scraping Task
 
 on:
   schedule:
