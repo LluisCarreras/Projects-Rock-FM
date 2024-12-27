@@ -39,5 +39,7 @@ jobs:
         git add songs.csv
         git commit -m "Update songs CSV file via GitHub Action"
         git push
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
