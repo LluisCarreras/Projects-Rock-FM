@@ -29,5 +29,5 @@ jobs:
 
     # Step 4: Run the Python script
     - name: Run scraper
-      run: python your_script.py
+      run: python rockfm_scrap.ipynb.py
 
