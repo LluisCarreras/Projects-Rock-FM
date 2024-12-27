@@ -35,10 +35,10 @@ jobs:
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add songs.csv
         git commit -m "Update songs CSV file via GitHub Action"
-        git push
+        git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --force
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
